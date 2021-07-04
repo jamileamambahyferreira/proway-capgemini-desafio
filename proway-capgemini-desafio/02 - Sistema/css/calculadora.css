@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin: 15px;
+    width: 90%;
+    max-width: 960px;
+    background-color: rgb(173, 165, 147);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* --- Mobile First--- */
+/* NAV  --- NAV  --- NAV */
+
+.navegacao {
+    background-color: #db9017;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+    min-height: 20px;
+    height: 230px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo{
+   margin-left: 700px ;
+   font-size:40px ;
+   font-weight:bold ;
+}
+
+
+
+/* MAIN  --- MAIN  --- MAIN*/
+main {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+
+
+.sub-titulo {
+    text-align: center;
+    margin: 30px;
+}
+
+h3 {
+    color: rgb(248, 142, 26);
+    padding: 8px;
+}
+
+label {
+    margin-left: 8px;
+}
+
+input {
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+/* --- BOTAO --- */
+.botao {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
+button {
+   
+    background-color: #df8208;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+    border: 4px solid #ca8d09;
+    border-radius: 7px;
+    box-shadow: 2px 2px rgb(116, 114, 114);
+    padding:8px;
+}
+
+button:hover {
+    background-color: #e7d5b7;
+    color: rgb(54, 50, 50);
+}
+
+/* ---  RELATORIO --- */
+
+h4{
+    text-align: center;
+    margin-top:12px;
+}
+.relatorio{
+    background-color: #f8eed1;
+    margin: 0 auto;
+    max-width: 960px;
+    margin: 15px;
+    width: 90%;
+    max-width: 960px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li{
+    font-size:12px;
+    margin:8px;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+    background-color: #323534;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape__principal > * {
+    margin: 16px 0;
+}
+
+.redes {
+    width: 70px;
+    padding: 10px;
+}
+
+.rodape__cc {
+    width: 100%;
+    height:150px ;
+    background-color: #250d0d;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+}
+
+/*  --- TABLET --- --- TABLET --- */
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+        position: static;
+        display: flex;
+        padding: 0;
+        width: auto;
+    }
+
+    .navegacao__nav {
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    .navegacao__itens ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navegacao__itens li {
+        font-size: 20px;
+        margin: 0 9px;
+    }
+
+    .navegacao__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .logo {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        text-align: center;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    /* MAIN  --- MAIN  --- MAIN*/
+
+    main {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        color: rgb(124, 68, 7);
+        padding: 8px;
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 21px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding:12px;
+        font-size: 18px;
+        border: 4px solid #db9017;
+        box-shadow: 3px 3px rgb(116, 114, 114);
+    }
+
+    .autora {
+       
+        font-size: 22px;
+        text-align: center;
+        font-weight: bolder;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+/* ---  RELATORIO --- */
+
+h4{
+    font-size:20px;
+}
+.relatorio{
+    margin-bottom:30px;
+    margin-right:10px;
+    width: 95%;
+   
+}
+ul{
+    text-align: justify;
+        
+}
+
+li{
+    font-size:16px;
+    margin:15px 80px;
+}
+
+
+    /* --- FOOTER --- */
+
+    .redes {
+        width: 90px;
+    }
+
+    .rodape__cc {
+        font-size: 22px;
+    }
+}
+
+/* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
+@media (min-width: 1200px) {
+   
+
+    .navegacao__itens li {
+        font-size: 24px;
+        margin: 0 16px;
+    }
+
+    
+    .navegacao__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+  
+    /* MAIN -------- MAIN --------- MAIN*/
+
+    label {
+        width: 100%;
+    }
+
+    .anuncio {
+        width: 840px;
+    }
+
+    .cliente {
+        width: 840px;
+    }
+
+    input {
+        width: 75%;
+        margin: 12px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .outros-inputs {
+        display: flex;
+        margin: 25px 0px;
+    }
+
+    .input-text {
+        display: block;
+    }
+
+    .input-data {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    .input-invest {
+        width: 40%;
+    }
+
+    button {
+        margin-bottom:40px;
+        box-shadow: 3px 3px rgb(116, 114, 114);
+    }
+    .autora{
+        margin-top: 30px;
+        background-color:white;
+        color: #6d7379;
+    }
+
+    span{
+        color: #292a2a;
+    }
+
+    /* ---  RELATORIO --- */
+
+h4{
+    font-size:25px;
+}
+
+.relatorio{
+    margin-bottom:50px;
+    align-items: center;
+}
+
+
+li{
+    font-size:18px;
+    margin:15px 80px;
+}

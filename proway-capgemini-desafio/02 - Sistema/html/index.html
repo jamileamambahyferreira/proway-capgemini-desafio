@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/calculadora.css" />
+    <title>Desafio de Progamação- Capgemini</title>
+</head>
+
+<body>
+    <nav class="navegacao">
+
+
+        <p class="titulo">Desafio de Progamação </p>
+
+    </nav>
+
+    <header class="header">
+
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="sub-titulo">
+                    <h3>Divulga Tudo:</h3>
+                    <h5>Para calcular o valor do seu anúncio insira os dados abaixo</h5>
+                </div>
+                <div class="formulario">
+                    <form action="" onsubmit="calculadora(event)">
+                        <div class="input-text">
+                            <label for="">Nome do Anúncio:</label>
+                            <input type="text" class="anuncio" id="anuncio"
+                                placeholder="Insira aqui o nome do seu anúncio">
+                        </div>
+                        <div class="input-text">
+                            <label>Cliente:</label>
+                            <input type="text" id="cliente" class="cliente" placeholder="Pessoa Física ou Jurídica">
+                        </div>
+                        <div class="outros-inputs">
+                            <div class="input-data">
+                                <div>
+                                    <label for="">Data de Início:</label>
+                                    <input type="date" id="data-inicio">
+                                </div>
+                                <div>
+                                    <label for="">Data de Término:</label>
+                                    <input type="date" id="data-fim">
+                                </div>
+                            </div>
+                            <div class="input-invest">
+                                <label for="">Investimento Diário: </label>
+                                <input type="number" id="investimento"
+                                    placeholder="Insira em reais o valor  que deseja investir">
+                            </div>
+                        </div>
+                        <div class="botao">
+                            <button type="submit">Calcular </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="relatorio">
+
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="autora">
+                <div>
+                    <img src="../imagens/logo.png" alt="">
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+      
+        <div class="rodape__cc">
+            <p>Projeto de Desafio - Academia Capgemini </p>
+            <div>
+                <p class="desenvolvido">
+                    Desenvolvido por <strong> Jamile Amambahy</strong> - Julho de 2021
+                </p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="../Js/calculadora.js"></script>
+</body>
+
+</html>
